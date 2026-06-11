@@ -6,90 +6,68 @@
     <title>O Lado de Dentro é Sagrado</title>
     <style>
         :root {
-            --bg-color: #080808;
-            --text-color: #a5a5a5;
+            --bg-color: #0c0c0c;
+            --text-color: #bcbcbc;
             --accent-color: #ffffff;
             --terminal-green: #00ff66;
         }
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: 'Fira Code', 'Courier New', Georgia, serif;
+            font-family: 'Georgia', serif;
             line-height: 1.9;
             margin: 0;
             padding: 40px 24px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            transition: background-color 1s ease;
         }
         .container {
             max-width: 600px;
             width: 100%;
         }
         
-        /* Estilo Console / Terminal Dev */
+        /* Cabeçalho estático estilo Console Dev - Sem Bugs */
         .terminal-header {
             font-family: monospace;
             color: var(--terminal-green);
-            font-size: 0.85rem;
-            margin-bottom: 20px;
-            opacity: 0.7;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+            opacity: 0.8;
             letter-spacing: 1px;
+            text-align: left;
+            width: 100%;
         }
         
-        /* Efeito de digitação autônoma */
-        .typewriter h1 {
+        h1 {
             font-weight: 300;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: var(--accent-color);
-            overflow: hidden;
-            border-right: 2px solid var(--terminal-green);
-            white-space: nowrap;
-            margin: 0 auto 40px auto;
-            letter-spacing: 3px;
-            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: var(--terminal-green); }
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            line-height: 1.4;
         }
 
         .playlist-container {
             margin-bottom: 40px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
             width: 100%;
-            background: #111;
-            padding: 15px;
-            border-radius: 6px;
-            border: 1px solid #222;
         }
         audio {
             width: 100%;
+            max-width: 500px;
             outline: none;
         }
         .carta {
-            font-family: 'Georgia', serif;
             font-size: 1.1rem;
             margin-bottom: 50px;
             text-align: justify;
-            opacity: 0;
-            animation: fadeInText 2s ease forwards;
-            animation-delay: 2s; /* Aparece sutilmente após a digitação */
         }
         .carta p {
             margin-bottom: 28px;
-        }
-        
-        @keyframes fadeInText {
-            to { opacity: 1; }
         }
 
         .galeria {
@@ -100,29 +78,23 @@
         }
         .galeria img {
             width: 100%;
-            height: 250px;
+            height: 220px;
             object-fit: cover;
             border-radius: 4px;
-            filter: grayscale(100%);
-            opacity: 0.5;
-            transition: all 0.8s ease;
+            filter: grayscale(40%);
+            transition: all 0.5s ease;
         }
-        /* Efeito interativo ao passar o dedo/mouse */
         .galeria img:hover {
             filter: grayscale(0%);
-            opacity: 1;
-            transform: scale(1.02);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="terminal-header">root@love:~# exec connection_init.sh</div>
+        <div class="terminal-header">&gt; _init_connection: secure_channel_active</div>
         
-        <div class="typewriter">
-            <h1>O Lado de Dentro é Sagrado.</h1>
-        </div>
+        <h1>O Lado de Dentro é Sagrado.</h1>
 
         <div class="playlist-container">
             <audio id="audioPlayer" controls>
@@ -132,39 +104,8 @@
         </div>
 
         <div class="carta">
-            <p>Há uma beleza muito silenciosa na forma como a gente escolheu pertencer uma à outra. No meio do barulho do mundo, da pressa dos dias e de tudo o que tenta nos dispersar, a nossa conexão sempre foi esse lugar de acesso exclusivo. Um espaço onde a gravidade não pesa, onde o cansaço silencia.</p>
+            <p>Há uma beleza muito silenciosa na forma como a gente escolheu pertencer uma à outra. No meio do barulho do mundo, da pressa dos dias e de tudo o que tenta nos dispersar, a nossa conexão sempre foi esse lugar de pouso. Um espaço onde a gravidade não pesa, onde o cansaço silencia.</p>
             
-            <p>Assim como no filme, onde duas existências de mundos e propósitos completamente diferentes se encontram no meio do vazio cósmico e descobrem que a vida só começa a fazer sentido quando estão juntas, eu olho para nós. Você chegou com a sua força, com a sua clareza e com essa sua inteligência que me fascina, e transformou o meu cotidiano em algo infinitamente mais vivo. Você é o meu ponto de luz, a minha única certeza estável no meio de tantas variáveis.</p>
+            <p>Assim como no filme, onde duas existências de mundos e propósitos completamente diferentes se encontram no meio do vazio e descobrem que a vida só começa a fazer sentido quando estão juntos, eu olho para nós. Você chegou com a sua força, com a sua clareza e com essa sua inteligência que me fascina, e transformou o meu cotidiano em algo infinitamente mais vivo. Você é o meu ponto de luz, a minha certeza no meio de tantas dúvidas.</p>
             
-            <p>Esse porta-chaves vai ficar na nossa entrada para ser o nosso primeiro altar diário. Quero que, toda vez que cruzarmos a porta e deixarmos nossas chaves ali, a gente lembre que não importa quão dura ou complexa tenha sido a jornada lá fora, o lado de dentro é um ambiente seguro e sagrado. É o nosso território, o nosso início e o nosso fim.</p>
-            
-            <p>Obrigada por segurar a minha mão com tanta firmeza, por dividir a vida com essa maturidade bonita e por me permitir decifrar e amar a sua imensidão. Que a gente continue sabendo compilar e voltar uma para a outra, todos os dias.</p>
-            
-            <p style="text-align: right; margin-top: 40px; font-style: italic; color: #ffffff;">Feliz Dia dos Namorados. Eu te amo, com tudo o que sou.</p>
-        </div>
-
-        <div class="galeria">
-            <img src="foto1.jpg" alt="Data stream 01">
-            <img src="foto2.jpg" alt="Data stream 02">
-        </div>
-    </div>
-
-    <script>
-        const audio = document.getElementById('audioPlayer');
-        
-        // Automação de Fade-In para o áudio começar suave
-        audio.addEventListener('play', () => {
-            audio.volume = 0;
-            let vol = 0;
-            const interval = setInterval(() => {
-                if (vol < 0.9) {
-                    vol += 0.05;
-                    audio.volume = vol;
-                } else {
-                    clearInterval(interval);
-                }
-            }, 200); // Sobe o volume gradativamente a cada 200ms
-        });
-    </script>
-</body>
-</html>
+            <p>Esse porta-chaves vai ficar na nossa entrada para ser o nosso primeiro altar diário. Quero que, toda vez que cruzarmos a porta e deixarmos nossas chaves ali, a
